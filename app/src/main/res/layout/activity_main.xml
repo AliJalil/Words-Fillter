@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/wordsTxt"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_txt"
+        android:elevation="16dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Add words"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/inputTxt"
+        android:layout_width="0dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_txt"
+        android:elevation="16dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Add your text here"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myWordsTv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/getNewTxtBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_btn"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Get Your Text"
+        app:layout_constraintEnd_toEndOf="@+id/outputTxt"
+        app:layout_constraintStart_toStartOf="@+id/outputTxt"
+        app:layout_constraintTop_toBottomOf="@+id/outputTxt" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/outputTxt"
+        android:layout_width="0dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="32dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_txt"
+        android:elevation="16dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Final Text Here"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputTxt" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addWordsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="161dp"
+        android:background="@drawable/bg_btn"
+        android:gravity="center"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordsTxt" />
+
+    <TextView
+        android:id="@+id/myWordsTv"
+        android:layout_width="0dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_txt"
+        android:hint="Your Words"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addWordsBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
